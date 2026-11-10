@@ -1,0 +1,80 @@
+.product-card {
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 20px;
+  width: 260px;
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s, box-shadow 0.2s;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  }
+
+  .product-image {
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+    margin-bottom: 15px;
+  }
+
+  .product-title {
+    font-size: 13px;
+    color: #383838;
+    margin-bottom: 12px;
+    line-height: 1.4;
+    height: 38px;
+    overflow: hidden;
+    font-weight: 400;
+  }
+
+  .price-old {
+    font-size: 12px;
+    color: #808080;
+    text-decoration: line-through;
+    display: block;
+    height: 16px;
+  }
+
+  .price-current {
+    font-size: 22px;
+    font-weight: bold;
+    color: #383838;
+    display: block;
+    margin: 2px 0;
+  }
+
+  .product-installment {
+    font-size: 12px;
+    color: #383838;
+    margin-bottom: 8px;
+  }
+
+  .product-shipping {
+    font-size: 12px;
+    color: #0082fc; // frete grátis
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+  }
+
+  .buy-button {
+    width: 100%;
+    background-color: #2b3990; 
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 12px;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+
+    &:hover {
+      background-color: #1f2b70;
+    }
+  }
+}

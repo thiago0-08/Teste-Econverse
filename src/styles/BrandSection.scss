@@ -1,0 +1,52 @@
+.brand-section {
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 0 20px;
+  text-align: center;
+
+  .brand-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #2b3990;
+    margin-bottom: 40px;
+    text-transform: lowercase;
+
+    &::first-letter {
+      text-transform: uppercase;
+    }
+  }
+
+  .brand-grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    overflow-x: auto;
+    padding-bottom: 10px;
+
+    .brand-circle-card {
+      width: 210px;
+      height: 210px;
+      background-color: #fff;
+      border-radius: 50%; 
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08); 
+      transition: transform 0.2s, box-shadow 0.2s;
+      cursor: pointer;
+      flex-shrink: 0;
+
+      &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+      }
+
+      .brand-logo {
+        width: 110px;
+        height: auto;
+        object-fit: contain;
+      }
+    }
+  }
+}
